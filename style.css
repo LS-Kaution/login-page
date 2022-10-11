@@ -1,0 +1,20 @@
+:root {
+    --main-color: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    background: transparent;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: var(--main-color); */
+}
+
