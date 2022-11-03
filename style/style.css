@@ -1,0 +1,41 @@
+:root {
+    --main-color: rgb(3, 1, 17);
+    --form-color: rgb(2, 31, 2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    background: transparent;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--main-color);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.titles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 6px;
+    color: white;
+
+}
+
+#form {
+    color: white;
+    background-color: var(--form-color);
+}
+
+.boxes {
+    background-color: rgb(255, 255, 255);
+}

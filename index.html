@@ -5,26 +5,108 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script type="module" src="script.js" defer></script>
-    <title>Login/Register</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <title>The Spira world</title>
 
 </head>
 
 <body>
-    <div class="block">
-        <h1>Sign in</h1>
+    <header class="titles">
+        <h1 id="title-game">The Spira World</h1>
+        <h3 id="post-title-game">(2 century after battle of Sinh)</h3>
+    </header>
 
-        <h4>Email Address</h4>
-        <input type="email" name="email" id="email" required />
+    <main id="main">
 
-        <h4>Password</h4>
-        <input type="text" name="password" id="password" required />
+        <!-- <img src="./style/background.gif" alt="background" id="background"> -->
 
-        <p>Forgot password?</p>
-        <p>Sign Up</p>
-        <a>You need a secure password?</a>
-    </div>
+        <form action="#" method="get" id="form">
+
+            <div>
+                <div>
+                    <label for="email">Email address (Required)</label>
+                </div>
+                <input type="email" name="email" class="boxes" id="email" title="Please, enter a valid Email address"
+                    placeholder="Example: leondra@outlook.com" required>
+
+
+                <div>
+                    <label for="nickname">Nickname (Required)</label>
+                </div>
+                <input type="text" name="nickname" class="boxes" id="nickname" placeholder="Example: Dark-Detonation"
+                    required>
+            </div>
+
+
+            <!-- <div>
+                <div>
+                    <label for="phone">Phone Number (Required)</label>
+                </div>
+                <input type="number" name="phone" class="boxes" id="phone">
+
+
+                <div>
+                    <label for="birthday">Birthday (Optional: Some gifs per year if you register)</label>
+                </div>
+                <input type="date" name="birthday" class="boxes" id="birthday">
+            </div>
+
+
+            <div>
+                <div>
+                    <label for="password">Password (Required)</label>
+                </div>
+                <input type="password" name="password" class="boxes" id="password"
+                    title="Please, enter a valid Password" placeholder="Example: 1-assHole_1" required>
+
+                <div>
+                    <label for="confirm-password">Confirm Password (Required)</label>
+                </div>
+                <input type="password" name="confirm-password" class="boxes" id="confirm-password"
+                    title="Please, enter the same password" required>
+            </div>
+
+
+
+            <div>
+            
+                <label for="nation">Select your nation</label>
+
+                <div>
+                    <input type="radio" name="zanarkand" id="zanarkand">
+                    <label for="zanarkand">Zanarkand</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="luca" id="luca">
+                    <label for="luca">Luca</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="bevelle" id="bevelle">
+                    <label for="bevelle">Bevelle</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="guadosalam" id="guadosalam">
+                    <label for="guadosalam">Guadosalam</label>
+                </div>
+            </div>
+
+            <div>
+                <input type="checkbox" name="terms-and-condition" id="terms-and-condition" required>
+                <label for="terms-and-condition">Do you accept the terms and conditions?</label>
+            </div>
+
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+
+            <p>Already a member?<a href="https://www.youtube.com/watch?v=BtLSaxRnIhc"> Then Sign In</a></p> -->
+
+        </form>
+    </main>
+
 
 </body>
 
