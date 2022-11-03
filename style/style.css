@@ -1,6 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 :root {
     --main-color: rgb(3, 1, 17);
-    --form-color: rgb(2, 31, 2);
+    --font-color: whitesmoke;
+    --register-button-color: rgb(2, 15, 2);
+}
+
+::placeholder {
+    color: whitesmoke;
+    padding: 1rem;
 }
 
 * {
@@ -15,27 +24,170 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 body {
+    font-size: 1.6rem;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.6rem;
     background-color: var(--main-color);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.titles {
+#title-game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 4rem;
+    font-weight: 800;
+    color: transparent;
+    background-image: url(https://media.giphy.com/media/EIbqAlY9yJlJ3WBHjc/giphy-downsized-large.gif);
+    background-position: center;
+    -webkit-background-clip: text;
+}
+
+#second-title-game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 4rem;
+    font-weight: 800;
+    color: transparent;
+    background-image: url(https://media.giphy.com/media/EIbqAlY9yJlJ3WBHjc/giphy-downsized-large.gif);
+    background-position: center;
+    -webkit-background-clip: text;
+}
+
+main {
+    display: flex;
+    margin-bottom: 2.5rem;
+}
+
+#background {
+    margin-top: 1rem;
+    height: 615px;
+    border-radius: 3rem 0rem 0rem 3rem;
+}
+
+form {
+    width: 100%;
+    max-width: 70rem;
+    height: 100%;
+    max-height: 61.5rem;
+    border-radius: 0rem 3rem 3rem 0rem;
+    margin-top: 1rem;
+    gap: 3rem;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: var(--main-color);
+    background-color: var(--font-color);
+}
+
+.fields {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    gap: 0.4rem;
+}
+
+.fields label {
+    padding-left: 1rem;
+}
+
+.fields input {
+    background-color: var(--main-color);
+    color: var(--font-color);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    width: 30rem;
+    height: 5rem;
+    padding: 0.5rem;
+}
+
+input[type="date"] {
+    padding: 1.2rem;
+    color: var(--font-color);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    padding: 1rem;
+}
+
+#field-nation {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    width: 60rem;
+    gap: 0.5rem;
+}
+
+select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    color: var(--font-color);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    width: 60rem;
+    height: 5rem;
+    padding: 0.5rem;
+}
+
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 6px;
-    color: white;
-
+    gap: 2rem;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.6rem;
 }
 
-#form {
-    color: white;
-    background-color: var(--form-color);
+#terms {
+    margin-right: 21rem;
+    margin-bottom: 1rem;
 }
 
-.boxes {
-    background-color: rgb(255, 255, 255);
+#register {
+    background-color: var(--register-button-color);
+    color: whitesmoke;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    border-radius: 1rem;
+    width: 40rem;
+    height: 5rem;
+    transition: 1s;
+}
+
+#register:hover {
+    font-size: 3.5rem;
+    width: 41rem;
+    height: 6rem;
+    transition: 1s;
+}
+
+#member {
+    margin-right: 29rem;
+    margin-top: 1rem;
 }
